@@ -1,0 +1,47 @@
+/********** Template CSS **********/
+
+:root {
+    --primary: #FFE468;
+    --secondary: #8CC641;
+    --light: #F2F2F2;
+    --dark: #272630;
+}
+
+.team-item {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.team-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/elec.jpeg) bottom center no-repeat;
+    background-size: cover;
+    height: 90px;
+    padding: 0 30px;
+    right: 45px;
+    left: 45px;
+    bottom: -45px;
+    transition: .5s;
+    z-index: 1;
+}
+
+.team-item:hover .team-text {
+    height: 100%;
+    bottom: 0;
+}
+
+.team-social {
+    position: absolute;
+    transition: .1s;
+    transition-delay: .0s;
+    opacity: 0;
+}
+
+.team-item:hover .team-social {
+    transition-delay: .3s;
+    opacity: 1;
+}
